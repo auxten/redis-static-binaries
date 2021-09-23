@@ -58,7 +58,7 @@ jobs:
         name: binaries
         path: |
           src/redis-cli
-          src/redis-sentinel
+          src/redis-benchmark
           src/redis-server
 
     - name: Release (if tagged)
@@ -67,7 +67,7 @@ jobs:
       with:
         files: |
           src/redis-cli
-          src/redis-sentinel
+          src/redis-benchmark
           src/redis-server
         draft: true
       env:
